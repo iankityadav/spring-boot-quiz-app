@@ -1,4 +1,4 @@
-package com.devrezaur.main.model;
+package com.prathamesh.main.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 public class Question {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int quesId;
 	private String title;
 	private String optionA;
@@ -95,7 +95,8 @@ public class Question {
 
 	@Override
 	public String toString() {
-		return "Question [quesId=" + quesId + ", title=" + title + ", optionA=" + optionA + ", optionB=" + optionB + ", optionC=" + optionC + ", ans=" + ans + ", chose=" + chose + "]";
+		return "Question [quesId=" + quesId + ", title=" + title + ", optionA=" + optionA + ", optionB=" + optionB
+				+ ", optionC=" + optionC + ", ans=" + ans + ", chose=" + chose + "]";
 	}
 
 }

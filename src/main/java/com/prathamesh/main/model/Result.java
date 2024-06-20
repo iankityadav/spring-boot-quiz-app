@@ -1,4 +1,4 @@
-package com.devrezaur.main.model;
+package com.prathamesh.main.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 public class Result {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	private String username;
 	private int totalCorrect = 0;

@@ -14,8 +14,8 @@ body {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 1fr;
-	grid-template-areas: "image-box"
-						"text-box";
+	grid-template-areas: "text-box"
+						"image-box";
 	row-gap: 50px;
 	column-gap: 50px;
 }
@@ -24,7 +24,7 @@ body {
 	.main-container {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr;
-		grid-template-areas: "image-box text-box";
+		grid-template-areas: "text-box image-box";
 	}
 }
 
